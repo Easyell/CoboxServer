@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE sqlMapConfig  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<sqlMapConfig>
+
+	<!-- Ibatis框架配置文件 -->
+	<!-- 配置sql映射文件 -->
+	<sqlMap resource="com/jeasyell/easyell/mapping/Group_UserMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/GroupMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/ProcessMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/Project_UserMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/ProjectMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/Task_OwenerMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/TaskMapper.xml" />
+	<sqlMap resource="com/jeasyell/easyell/mapping/UserMapper.xml" />
+
+</sqlMapConfig>

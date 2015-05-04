@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE  generatorConfiguration  PUBLIC  "-//mybatis.org//DTD  MyBatis  Generator  Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+	<classPathEntry
+		location="E:\Workspaces\bishe\easyell\mysql-connector-java-5.1.24-bin.jar" />
+	<context id="DB2Tables" targetRuntime="MyBatis3">               
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://121.41.115.125/Cobox" 
+			userId="developer"
+			password="developer">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="model" targetProject="E:\Workspaces\bishe\easyell\src\main\java\com\jeasyell\easyell">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="mapping" targetProject="E:\Workspaces\bishe\easyell\src\main\java\com\jeasyell\easyell">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator type="XMLMAPPER" targetPackage="repositories" targetProject="E:\Workspaces\bishe\easyell\src\main\java\com\jeasyell\easyell">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+		<table tableName="group" domainObjectName="Group" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="group_user" domainObjectName="Group_User" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="process" domainObjectName="Process" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="project" domainObjectName="Project" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="project_user" domainObjectName="Project_User" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="task" domainObjectName="Task" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="task_owener" domainObjectName="Task_Owener" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+		<table tableName="user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false"
+		enableDeleteByExample="false" enableSelectByExample="false"/>
+	</context>
+</generatorConfiguration>   

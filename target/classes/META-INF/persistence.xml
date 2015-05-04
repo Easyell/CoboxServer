@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+            http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="easyell" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<!-- 配置数据库驱动 -->
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<!-- 配置数据库url -->
+			<property name="hibernate.connection.url"
+				value="jdbc:mysql://121.41.115.125:3306/pmms_bs?autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10  
+				&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+			<!-- 配置数据库用户名 -->
+			<property name="hibernate.connection.username" value="developer" />
+			<!-- 配置数据库密码 -->
+			<property name="hibernate.connection.password" value="developer" />
+			<!-- 配置Hibernate方言 -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			
+			<!-- <property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_query_cache" value="false" />
+			<property name="hibernate.use_sql_comments" value="false" /> -->
+			<property name="validationQuery" value="SELECT 1" />
+			<property name="testOnBorrow" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

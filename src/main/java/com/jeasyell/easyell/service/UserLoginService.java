@@ -1,0 +1,6 @@
+package com.jeasyell.easyell.service;
+
+public interface UserLoginService {
+
+	public int userlogin(int userId, String password);
+}
