@@ -6,13 +6,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<!-- Ibatis框架配置文件 -->
 	<!-- 配置sql映射文件 -->
-	<sqlMap resource="com/jeasyell/easyell/mapping/Group_UserMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/GroupMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/ProcessMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/Project_UserMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/ProjectMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/Task_OwenerMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/TaskMapper.xml" />
-	<sqlMap resource="com/jeasyell/easyell/mapping/UserMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/Group_UserMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/GroupMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/ProcessMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/Project_UserMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/ProjectMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/Task_OwenerMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/TaskMapper.xml" />
+	<sqlMap resource="com/easyell/coboxserver/mapping/UserMapper.xml" />
 
 </sqlMapConfig>

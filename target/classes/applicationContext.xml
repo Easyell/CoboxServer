@@ -31,11 +31,11 @@
 	<!-- 配置sqlMapClient -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="mapperLocations" value="classpath:com/jeasyell/easyell/mapping/*.xml" />
+		<property name="mapperLocations" value="classpath:com/easyell/coboxserver/mapping/*.xml" />
 	</bean>
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.jeasyell.easyell.repositories" />
+		<property name="basePackage" value="com.easyell.coboxserver.repositories" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 	
@@ -76,18 +76,18 @@
 	
 	<!-- <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-		<property name="mapperInterface" value="com.jeasyell.easyell.repositories.UserMapper" />
+		<property name="mapperInterface" value="com.easyell.coboxserver.repositories.UserMapper" />
 	</bean>
 	
-	<bean id="userLoginService" class="com.jeasyell.easyell.service.impl.UserLoginServiceImpl">
+	<bean id="userLoginService" class="com.easyell.coboxserver.service.impl.UserLoginServiceImpl">
 		<property name="userMapper" ref="userMapper" />
 	</bean>
 	
-	<bean id="userLoginController" class="com.jeasyell.easyell.controller.UserLoginController">
+	<bean id="userLoginController" class="com.easyell.coboxserver.controller.UserLoginController">
 		<property name="userLoginService" ref="userLoginService" />
 	</bean> -->
 	
-	<context:component-scan base-package="com.jeasyell.easyell" />
+	<context:component-scan base-package="com.easyell.coboxserver" />
 	
 <aop:aspectj-autoproxy proxy-target-class="true" />
 
